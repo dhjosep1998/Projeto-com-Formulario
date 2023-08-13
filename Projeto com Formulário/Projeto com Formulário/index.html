@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto com Forms</title>
+</head>
+<body>
+    <!-- cabecçalho  do projeto -->
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu celular para vender mais rápido</h3>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <p>Formulário</p>
+        </div>
+    <form class="form">
+        <!-- iniciando corpo do projeto p trabalhar c forms -->
+        <div class="form-body">
+            <h1 class="form-title">Venda fácil seu celular!</h1>
+            <p>Descreva as características e marque as opcionais que ele possui</p>
+           <!-- seção 1 do forms -->
+        <div class="box-input">
+          <label for="title">Título do anúncio<span class="required-field">*</span></label>
+           <input
+           type="text"
+           name="title"
+           id="title"
+           class="block"
+           placeholder="Um título para anunciar seu celular"
+           minlength="1"
+           maxlength="30"
+           required
+                 />
+               <!-- seção 2 do forms -->
+            <div class="box-input">
+                <label for="price">Preço<span class="required-field">*</span></label>
+                <input
+           type="number"
+           name="price"
+           id="price"
+           class="block"
+           placeholder="Defina o preço"
+           required
+                />
+               <!-- seção 03 do forms -->
+                <div class="box-input">
+                    <label for="description">
+            Descrição<span class="required-field">*</span></label>
+
+             <textarea 
+            name="description"
+            id="description"
+            class="block"
+           placeholder="Descreva seu produto em detalhes">
+             </textarea>
+                </div>
+                <!-- seção 4 do forms -->
+         <div class="box-input">
+       <label for="brand">Marca<span class="required-field">*</span></label>
+        <input
+          type="number"
+          name="brand"
+          id="brand"
+          class="block"
+          placeholder="Digite a marca do aparelho"
+          required
+           />
+       <!-- seção 5 do forms -->
+         <div class="box-input">
+         <label for="modelo">Modelo<span class="required-field">*</span></label>
+            <input
+           type="number"
+           name="modelo"
+           id="modelo"
+           class="block"
+           placeholder="Digite o modelo do aparelho"
+          required
+                        />
+         <!-- seção 6 do forms -->
+         <div class="box-input">
+         <label for="operadora">Operadora<span class="required-field">*</span></label>
+          <input
+           type="number"
+          name="operadora"
+          id="operadora"
+         class="block"
+        placeholder="Digite a Operadora do aparelho"
+        required
+              />
+   <!-- seção 7 do forms -->
+        <div class="box-input">
+           <label for="modelo">Modelo<span class="required-field">*</span></label>
+            <input
+              type="number"
+              name="modelo"
+              id="modelo"
+             class="block"
+            placeholder="Digite o modelo do aparelho"
+              required
+                                />
+          <!-- seção 8 do forms -->
+      <div class="box-input">
+         <label for="purchase_date">Data de Compra<span class="required-field">*</span></label>
+              <input
+            type="date"
+            name="purchase_date"
+             id="purchase_date"
+             class="block"
+            required
+             />
+             <!-- seção 9 do forms -->
+       <div class="box-input">
+          <p>Tipo de Sistema<span class="required-field">*</span></p>
+            <input type="radio" id="android" name="android"/>
+             <label for="android">Android</label>
+            <input type="radio" id="ios" name="ios"/>
+              <label for="auto">IOS</label>
+        </div>
+        
+         <div class="optional-box">
+           <p>Opcionais</p>
+         <ul class="optional-list">
+          <li>
+           <input
+          type="checkbox"
+           id="Caixa"              
+           name="optional[]"
+            value="Caixa"
+           />
+       <label for="Caixa">Caixa</label>
+         </li>
+             <li>
+             <input
+              type="checkbox"
+               id="Embalagem"
+               name="optional[]"
+               value="Embalagem"
+              />
+         <label for="Embalagem">Embalagem</label>
+          </li>
+          <li>
+            <input
+             type="checkbox"
+              id="Relógio"
+              name="optional[]"
+             value="Relógio"
+               />
+              <label for="Relógio">Relógio</label>
+               </li>
+
+               <li>
+                <input
+                 type="checkbox"
+                  id="Notebook"
+                  name="optional[]"
+                 value="Notebook"
+                   />
+                  <label for="Notebook">Notebook</label>
+                   </li>
+
+                   <li>
+                    <input
+                     type="checkbox"
+                      id="Desktop"
+                      name="optional[]"
+                     value="Desktop"
+                       />
+                      <label for="Desktop">Desktop</label>
+                  <li>
+              <input
+             type="checkbox"
+             id="capa"              
+             name="optional[]"
+             value="capa"
+           />
+       <label for="capa">Capa</label>
+         </li>
+             <li>
+             <input
+              type="checkbox"
+               id="Fone"
+               name="optional[]"
+               value="Fone"
+              />
+         <label for="Fone">Fone</label>
+          </li>
+          <li>
+            <input
+             type="checkbox"
+              id="Carregador"
+              name="optional[]"
+             value="Carregador"
+               />
+              <label for="Carregador">Carregador</label>
+               </li>
+
+               <li>
+                <input
+                 type="checkbox"
+                  id="PowerBank"
+                  name="optional[]"
+                 value="PowerBank"
+                   />
+                  <label for="PowerBank">PowerBank</label>
+                   </li>
+
+                   <li>
+                    <input
+                     type="checkbox"
+                      id="Bateria"
+                      name="optional[]"
+                     value="Bateria"
+                       />
+                      <label for="Bateria">Bateria</label>
+                       </li>      
+            </ul>
+         </div>
+           <div class="box-input">
+           <p>Fotos do Aparelho:<span class=
+            "required-field">*</span></p>
+            <input
+            type="file"
+            multiple
+            accept="image/png, image/jpg"
+            id="image"
+            name="images"
+            required />
+           </div>
+
+            <input type="submit" class="btn-submit" value="Enviar"/>
+             </form>
+           </div>
+         </div>
+      </div>
+   
+
+    
+</body>
+</html>
